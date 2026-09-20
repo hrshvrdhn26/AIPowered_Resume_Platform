@@ -28,7 +28,11 @@ def extract_resume(resume):
 
         return text
 
-resume_text = extract_resume("Resumes/Harshvardhan_newOG.pdf")
+BASE_DIR = Path(__file__).resolve().parent
+
+RESUME_PATH = BASE_DIR / "Resumes" / "Harshvardhan_newOG.pdf"
+
+resume_text = extract_resume(str(RESUME_PATH))
 
 class Resume(BaseModel):
     name: str | None = None
