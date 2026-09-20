@@ -1257,7 +1257,7 @@ async function sendMessage(
 
         const response =
             await fetch(
-                "http://127.0.0.1:8000/chat",
+                "https://aipowered-resume-platform.onrender.com/chat",
                 {
 
                     method: "POST",
