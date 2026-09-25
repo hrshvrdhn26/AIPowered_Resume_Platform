@@ -2,4 +2,5 @@
 venv/
 .env
 __pycache__/
-*.pyc
+*.pycresume_data_cache.json
+resume_text_cache.txt
